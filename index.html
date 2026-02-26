@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Typing Skill Assessment</title>
+<link rel="stylesheet" href="./CSS/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4 body_class">
+<div class="container">
+<h3 class="mb-4">Typing Skill Assessment</h3>
+<div class="row">
+
+<!-- Text Area -->
+<div class="col-md-8 mb-4">
+<textarea id="textArea" rows="12" class="form-control text_area" placeholder="Start typing here..."></textarea>
+</div>
+
+<!-- Right Panel -->
+<div class="col-md-4">
+<div class="card p-3 mb-3 card-body">
+<h6>Clock:</h6>
+<p id="clock">--:--:--</p>
+
+<h6>Timer:</h6>
+<p id="timer">00:00</p>
+</div>
+
+<div class="card p-3 card-body">
+<h6>Summary</h6>
+<p>Words Typed Per Second: <span id="wps">0</span></p>
+<p>Chars Typed Per Second: <span id="cps">0</span></p>
+<p>Sentences Typed Per Minute: <span id="spm">0</span></p>
+
+<button id="resetBtn" class="btn mt-2 reset_btn text-white">RESET</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="./JS/index.js"></script>
+
+</body>
+</html>
